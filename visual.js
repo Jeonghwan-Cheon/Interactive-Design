@@ -58,9 +58,9 @@ export class Visual {
             if (dist < minDist) {
                 const angle = Math.atan2(dy, dx);
                 const tx = item.x + Math.cos(angle) * minDist;
-                const tx = item.y + Math.sin(angle) * minDist; 
+                const ty = item.y + Math.sin(angle) * minDist; 
                 const ax = tx - this.mouse.x;
-                const ay = tx - this.mouse.y;
+                const ay = ty - this.mouse.y;
                 item.vx -= ax;
                 item.vy -= ay;
                 item.collide();

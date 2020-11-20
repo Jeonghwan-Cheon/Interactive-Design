@@ -12,10 +12,10 @@ export class Text {
         const myText = str;
         const fontWidth = 700;
         const fontSize = 800;
-        const fontName = 'Hind'
+        const fontName = 'Hind';
 
         this.ctx.clearRect(0, 0, stageWidth, stageHeight);
-        this.ctx.font = `${fontWidth} ${fontSize}px ${fontname}`;
+        this.ctx.font = `${fontWidth} ${fontSize}px ${fontName}`;
         this.ctx.fillStyle = `rgba(0, 0, 0, 0.3)`;
         this.ctx.textBaseline = `middle`;
         const fontPos = this.ctx.measureText(myText);
@@ -52,13 +52,14 @@ export class Text {
             for (width; width < stageWidth; width += density) {
                 pixel = imageData[((width + (height * stageWidth)) * 4) - 1];
                 if (pixel != 0 &&
+                    width > 0 &&
                     width < stageWidth &&
-                    height >0 &&
+                    height > 0 &&
                     height < stageHeight) {
                         particles.push({
                             x: width,
                             y: height,
-                    })
+                    });
                 }
             }
 

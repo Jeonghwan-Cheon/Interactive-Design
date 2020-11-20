@@ -24,7 +24,7 @@ class App {
             width: document.body.clientWidth,
             height: document.body.clientHeight,
             antialias: true,
-            transparent: false,
+            transparent: true,
             resolution: (window.devicePixelRatio > 1) ? 2 : 1,
             autoDensity: true,
             powerPreference: "high-performance",
@@ -49,7 +49,7 @@ class App {
 
         this.visual.animate();
 
-        this.renderer.render(this.page);
+        this.renderer.render(this.stage);
     }
 }
 

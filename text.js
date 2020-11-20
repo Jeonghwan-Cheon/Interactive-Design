@@ -9,9 +9,14 @@ export class Text {
         this.canvas.width = stageWidth;
         this.canvas.height = stageHeight;
 
+        const adjustFontSize = Math.min(stageWidth, stageHeight)*0.7
+
         const myText = str;
-        const fontWidth = 700;
-        const fontSize = 800;
+        // const fontWidth = 700;
+        // const fontSize = 800;
+        const fontWidth = adjustFontSize*7/8;
+        const fontSize = adjustFontSize;
+        
         const fontName = 'Hind';
 
         this.ctx.clearRect(0, 0, stageWidth, stageHeight);

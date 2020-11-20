@@ -35,6 +35,7 @@ class App {
             0, 2 * Math.PI
         );
         this.ctx.fill();
+
     }
 }
 

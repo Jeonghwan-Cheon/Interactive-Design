@@ -14,9 +14,9 @@ class App {
 
                 this.message = new Message();
                 this.message.setMessage(
-                    'First Project of Kinetic Typography. November 20, 2020',
+                    'First Project of Kinetic Typography.',
                     document.body.clientWidth,
-                    document.body.clientHeight * 2 / 10,
+                    document.body.clientHeight * 3 / 10,
                 );
 
                 window.addEventListener('resize', this.resize.bind(this), false);

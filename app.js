@@ -1,4 +1,5 @@
 import {Visual} from './visual.js';
+import {Message} from './message.js'
 
 class App {
     constructor() {
@@ -6,10 +7,17 @@ class App {
 
         WebFont.load({
             google: {
-              families: ['Hind:700']
+              families: ['Hind:700', 'Josefin Sans']
             },
             fontactive: () => {
                 this.visual = new Visual();
+
+                this.message = new Message();
+                this.message.setMessage(
+                    'First Project of Kinetic Typography. November 20, 2020',
+                    document.body.clientWidth,
+                    document.body.clientHeight * 2 / 10,
+                );
 
                 window.addEventListener('resize', this.resize.bind(this), false);
                 this.resize();

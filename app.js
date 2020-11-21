@@ -12,12 +12,12 @@ class App {
             fontactive: () => {
                 this.visual = new Visual();
 
-                this.message = new Message();
-                this.message.setMessage(
-                    'It is only an alphabet, but interactive!',
-                    document.body.clientWidth,
-                    document.body.clientHeight * 2 / 10,
-                );
+                // this.message = new Message();
+                // this.message.setMessage(
+                //     'It is only an alphabet, but interactive!',
+                //     document.body.clientWidth,
+                //     document.body.clientHeight * 2 / 10,
+                // );
 
                 window.addEventListener('resize', this.resize.bind(this), false);
                 this.resize();

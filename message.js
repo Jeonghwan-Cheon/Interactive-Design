@@ -18,7 +18,7 @@ export class Message {
         const myMessage = str;
 
         const fontWidth = adjustFontSize * 7 / 8;
-        const fontSize = adjustFontSize / 8;
+        const fontSize = adjustFontSize / 20;
         
         const fontName = 'Josefin Sans';
 

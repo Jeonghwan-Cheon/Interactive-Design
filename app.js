@@ -14,9 +14,9 @@ class App {
 
                 this.message = new Message();
                 this.message.setMessage(
-                    'First Project of Kinetic Typography.',
+                    'It is only an alphabet, but interactive!',
                     document.body.clientWidth,
-                    document.body.clientHeight * 3 / 10,
+                    document.body.clientHeight,
                 );
 
                 window.addEventListener('resize', this.resize.bind(this), false);

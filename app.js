@@ -16,7 +16,7 @@ class App {
                 this.message.setMessage(
                     'It is only an alphabet, but interactive!',
                     document.body.clientWidth,
-                    document.body.clientHeight,
+                    document.body.clientHeight * 2 / 10,
                 );
 
                 window.addEventListener('resize', this.resize.bind(this), false);

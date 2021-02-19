@@ -7,7 +7,7 @@ class App {
 
         WebFont.load({
             google: {
-              families: ['Hind:700', 'Josefin Sans']
+              families: ['Hind:700']
             },
             fontactive: () => {
                 this.visual = new Visual();

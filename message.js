@@ -20,7 +20,7 @@ export class Message {
         const fontWidth = adjustFontSize * 7 / 8;
         const fontSize = adjustFontSize / 5;
         
-        const fontName = 'Josefin Sans';
+        const fontName = 'Hind:700';
 
         this.ctx.clearRect(0, 0, stageWidth, stageHeight);
         this.ctx.font = `${fontWidth} ${fontSize}px ${fontName}`;
